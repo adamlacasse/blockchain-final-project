@@ -6,10 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite build && node server"
+    "start": "vite build && node server",
+    "migrations": "flyway -c db/flyway.cjs migrate"
   },
   "dependencies": {
+    "body-parser": "^1.20.1",
+    "crypto-js": "^4.1.1",
     "express": "^4.18.2",
+    "node-flywaydb": "^3.0.7",
+    "pg": "^8.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
